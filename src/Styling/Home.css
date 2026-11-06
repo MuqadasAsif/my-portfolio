@@ -1,0 +1,178 @@
+#home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background: linear-gradient(120deg, #0f172a, #15102b);
+    color: #e2e8f0;
+    overflow: hidden;
+}
+
+.home-content {
+    max-width: 620px;
+}
+
+.intro {
+    color: #a78bfa;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.home-content h1 {
+    font-size: 58px;
+    line-height: 1.2;
+    margin: 15px 0;
+    color: #f8fafc;
+}
+
+    .home-content h1 span {
+        color: #a78bfa;
+    }
+
+.home-content h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #cbd5e1;
+    margin-top: 15px;
+}
+
+.description {
+    color: #94a3b8;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 22px;
+    max-width: 520px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+    .home-buttons a {
+        display: inline-block;
+        padding: 13px 25px;
+        border: 1px solid #8b5cf6;
+        border-radius: 6px;
+        background-color: #8b5cf6;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+        .home-buttons a:hover {
+            background-color: #7c3aed;
+        }
+
+    .home-buttons .contact-btn {
+        background: transparent;
+        color: #a78bfa;
+    }
+
+        .home-buttons .contact-btn:hover {
+            background-color: #8b5cf6;
+            color: white;
+        }
+
+        .home-buttons button:hover {
+            background-color: #7c3aed;
+            transform: translateY(-3px);
+        }
+
+    .home-buttons .contact-btn {
+        background: transparent;
+        color: #c4b5fd;
+    }
+
+        .home-buttons .contact-btn:hover {
+            background-color: #8b5cf6;
+            color: white;
+        }
+
+.home-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.circle {
+    width: 290px;
+    height: 290px;
+    border: 1px solid rgba(167, 139, 250, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #29204a, #15102b 70%);
+    box-shadow: 0 0 80px rgba(139, 92, 246, 0.2);
+    position: relative;
+}
+
+    .circle::before {
+        content: "";
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        border: 1px dashed rgba(167, 139, 250, 0.35);
+        border-radius: 50%;
+    }
+
+    .circle span {
+        font-size: 85px;
+        font-weight: 700;
+        color: #c4b5fd;
+        letter-spacing: 5px;
+    }
+
+@media (max-width: 900px) {
+    #home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 55px;
+        padding: 70px 8%;
+    }
+
+    .home-content h1 {
+        font-size: 42px;
+    }
+
+    .home-decoration {
+        align-self: center;
+        margin-left: 0;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+        .circle::before {
+            width: 225px;
+            height: 225px;
+        }
+
+        .circle span {
+            font-size: 60px;
+        }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .home-content h2 {
+        font-size: 24px;
+    }
+
+    .home-buttons {
+        flex-wrap: wrap;
+    }
+}
