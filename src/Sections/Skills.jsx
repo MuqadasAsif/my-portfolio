@@ -35,7 +35,7 @@ function Skills() {
 
                     <div className="skill-card">
                         <h3>Tools</h3>
-                        <p>Visual Studio</p>
+                        <p>Visual Studio, Git, GitHub</p>
                     </div>
 
                     <div className="skill-card">
