@@ -25,9 +25,11 @@ function Contact() {
 
                     <div className="contact-card">
                         <h3>LinkedIn</h3>
+                        {/*target="_blank" → Link new tab mein open hoga.*/}
+                        {/*rel	External link ke saath security/privacy behaviour kya hoga?*/}
                         <a
                             href="https://www.linkedin.com/in/muqadas-junaid-4b2959362/"
-                            target="_blank"
+                            target="_blank" 
                             rel="noopener noreferrer"
                         >
                             View My LinkedIn Profile
